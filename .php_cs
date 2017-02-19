@@ -6,17 +6,15 @@ $finder = Symfony\CS\Finder\DefaultFinder::create()
 return Symfony\CS\Config\Config::create()
     ->level(Symfony\CS\FixerInterface::SYMFONY_LEVEL)
     ->fixers(array(
+    	'short_array_syntax',
+    	'-empty_return',
         'combine_consecutive_unsets',
-        'header_comment',
-        'long_array_syntax',
-        'newline_after_open_tag',
+        'line_after_namespace',
+        'no_unused_imports',
         'no_php4_constructor',
+        'no_blank_lines_after_phpdoc',
         'no_useless_else',
-        'ordered_class_elements',
-        'ordered_use',
-        'php_unit_construct',
-        'php_unit_strict',
-        '-phpdoc_no_empty_return',
+        'no_closing_tag',
     ))
     ->setUsingCache(true)
     ->finder($finder);
