@@ -1,4 +1,5 @@
 <?php
+
 namespace SalvoCanna\RedisNotificationBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;

@@ -1,4 +1,5 @@
 <?php
+
 namespace SalvoCanna\RedisNotificationBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;

@@ -1,1 +1,4 @@
 services:
+    rnb.notification_manager:
+        class: SalvoCanna\RedisNotificationBundle\Model\NotificationManager
+        arguments: ['%rnb.redis_connection%']
