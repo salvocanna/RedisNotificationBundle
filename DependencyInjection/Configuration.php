@@ -1,5 +1,4 @@
 <?php
-
 namespace SalvoCanna\RedisNotificationBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
@@ -13,15 +12,13 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('sc_redis_notification_bundle');
-        /*$rootNode
+        $rootNode = $treeBuilder->root('rnb');
+        $rootNode
             ->children()
-            ->scalarNode('notification_class')
-            ->cannotBeEmpty()
-            ->defaultValue('AppBundle\\Entity\\Notification')
-            ->info('Entity for a notification (default: AppBundle\\Entity\\Notification)')
+            ->scalarNode('redis_connection')
+            ->defaultValue('snc_redis.default')
+            ->info('Redis connection to use')
             ->end();
-         */
 
         return $treeBuilder;
     }
