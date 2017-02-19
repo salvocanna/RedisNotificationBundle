@@ -1,0 +1,29 @@
+{
+  "name": "salvocanna/redis-notification-bundle",
+  "type" : "symfony-bundle",
+  "description": "Symfony Bundle for Redis Based Notifications",
+  "keywords": ["symfony redis notification bundle"],
+  "license": "MIT",
+  "authors": [{
+    "name" : "Salvo Canna",
+    "email" : "salvocanna@users.noreply.github.com"
+  }],
+  "require" : {
+    "php": ">=5.4",
+    "symfony/framework-bundle": ">=2.8 <3",
+    "twig/twig": "*"
+  },
+  "autoload" : {
+    "psr-4": {
+      "SalvoCanna\\RedisNotificationBundle\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "1.0-dev"
+    }
+  }
+}
